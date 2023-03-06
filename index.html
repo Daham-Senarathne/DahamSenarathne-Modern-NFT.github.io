@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NFT-modern</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+</head>
+
+<body>
+
+    <header class="position-fixed top-0">
+        <nav>
+            <div class="row d-flex justify-content-between align-items-center px-2 px-md-3 px-lg-5 m-0">
+                <div class="col-2 d-flex align-items-center">
+                    <button class="logo">N</button>
+                    <p class="m-0">NIFTYVERSE</p>
+                </div>
+                <div class="col-6 d-none d-md-none d-lg-flex justify-content-between align-items-center">
+                    <a href="#">MARKETPLACE</a>
+                    <a href="#">EXPLORE</a>
+                    <a href="#">GALLARY</a>
+                    <a href="#">CONTACT</a>
+                    <a href="#">ABOUT</a>
+                </div>
+                <div class="col-2 d-none d-md-none d-lg-flex justify-content-end align-items-center">
+                    <button class="button-white-small">GET STARTED</button>
+                </div>
+                <div class="col-2 d-flex d-md-flex d-lg-none justify-content-end align-items-center">
+                    <button class="border-0 bg-transparent text-white" onclick="sliderOpen();"><i
+                            class="bi bi-grid-3x3-gap-fill"></i></button>
+                </div>
+            </div>
+        </nav>
+        <div class="slider d-block d-md-block d-lg-none" id="slider">
+            <button class="border-0 bg-transparent text-white" onclick="sliderClose();"><i
+                    class="bi bi-x-lg"></i></button>
+            <ul>
+                <li><a href="#">GET STARTED</a></li>
+                <li><a href="#">MARKETPLACE</a></li>
+                <li><a href="#">EXPLORE</a></li>
+                <li><a href="#">GALLARY</a></li>
+                <li><a href="#">CONTACT</a></li>
+                <li><a href="#">ABOUT</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="background-1 pt-4">
+        <div class="row m-0 hero-overlay">
+            <div class="col-6 d-none d-md-none d-lg-flex justify-content-center align-items-center">
+                <div class="col-8 hero-images">
+                    <img class="img-1" src="resources/images/1.jpg">
+                    <img class="img-2" src="resources/images/2.jpg">
+                </div>
+            </div>
+            <div class="col-12 col-md-12 col-lg-6 d-flex justify-content-center align-items-center">
+                <div class="col-12 p-3 p-md-5 p-lg-5">
+                    <p class="m-0 hero-title-1 animate__animated animate__fadeInUp">
+                        HOW ABOUT A
+                    </p>
+                    <p class="m-0 hero-title-2 animate__animated animate__fadeInUp">
+                        SPACE<br>MALLOW
+                    </p>
+                    <p class="m-0 hero-tagline py-5 py-lg-4 animate__animated animate__fadeInUp">
+                        Own the future with our exclusive NFT
+                        collection discover endless
+                        possibilities today
+                    </p>
+                    <button class="button-black">MARKETPLACE</button>
+                </div>
+            </div>
+        </div>
+
+        <section class="features">
+            <div class="row">
+                <div class="col-12">
+                    <p class="m-0 title-main text-center pb-4">WE ARE UNIQUE</p>
+                </div>
+                <div class="col-12">
+                    <p class="m-0 heading-sub text-center">Discover a world of unique NFTs on our platform - curated for
+                        the discerning collector.
+                        Join us and own a piece of
+                        the future today
+                    </p>
+                </div>
+                <div class="col-12 pt-5">
+                    <div class="row d-flex justify-content-between">
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 pb-4 pb-md-4 pb-lg-0">
+                            <div class="col-12 feature d-grid justify-content-center">
+                                <p class="m-0 heading text-center feature-inner">Curated selection of NFTs</p>
+                                <img class="m-auto p-3 feature-inner" src="https://img.icons8.com/ios-filled/80/ffffff/easel.png" />
+                                <p class="m-0 title-sub text-center feature-inner">Our selection of NFTs is carefully
+                                    curated to offer only the best quality
+                                    and value. Trust that the NFTs you
+                                    purchase from us will appreciate in
+                                    value over time</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4 pb-4 pb-md-4 pb-lg-0">
+                            <div class="col-12 feature d-grid justify-content-center">
+                                <p class="m-0 feature-inner heading text-center">INNOVATIVE AUCTION SYSTEM</p>
+                                <img class="m-auto p-3 feature-inner"
+                                    src="https://img.icons8.com/material-rounded/80/ffffff/scales.png" />
+                                <p class="m-0 feature-inner title-sub text-center">Our fair and transparent auction
+                                    system creates a level playing field
+                                    for buyers and sellers. Compete with
+                                    confidence, knowing the value of
+                                    each NFT benefits both parties in the
+                                    long run</p>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-12 col-lg-4">
+                            <div class="col-12 feature d-grid justify-content-center">
+                                <p class="m-0 feature-inner heading text-center">ADVANCED SEARCH</p>
+                                <img class="m-auto p-3 feature-inner" src="https://img.icons8.com/sf-regular/80/ffffff/search.png" />
+                                <p class="m-0 feature-inner title-sub text-center">Our personalized dashboard and
+                                    advanced search options help you
+                                    find the NFTs you want easily. Stay up
+                                    -to-date with real-time market data
+                                    and track the performance of your
+                                    favorite artists or creators</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="trending">
+            <div class="row">
+                <div class="col-12">
+                    <p class="m-0 title-main text-center pb-5">TRENDING</p>
+                </div>
+                <div class="col-12 pb-5">
+                    <div class="swiper" id="trending">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="resources/images/3.jpg">
+                                <p class="m-0">2.5 ETH</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/images/4.jpg">
+                                <p class="m-0">2.5 ETH</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/images/5.jpg">
+                                <p class="m-0">2.5 ETH</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/images/6.jpg">
+                                <p class="m-0">2.5 ETH</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/images/7.jpg">
+                                <p class="m-0">2.5 ETH</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/images/21.jpg">
+                                <p class="m-0">2.5 ETH</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/images/22.jpg">
+                                <p class="m-0">2.5 ETH</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/images/23.jpg">
+                                <p class="m-0">2.5 ETH</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/images/24.jpg">
+                                <p class="m-0">2.5 ETH</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/images/25.jpg">
+                                <p class="m-0">2.5 ETH</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <button class="button-white">SEE MORE</button>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <section class="background-2">
+        <section class="gallary">
+            <div class="row">
+                <div class="col-12">
+                    <p class="m-0 title-main text-center pb-5">OUR ART GALLARY</p>
+                </div>
+                <div class="col-12 pb-5">
+                    <div class="swiper" id="gallary1">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="resources/images/12.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/images/13.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/images/14.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/images/15.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/images/16.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/images/17.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/images/18.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/images/19.jpg">
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/images/20.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <button class="button-white">SEE MORE</button>
+                </div>
+                <div class="col-12 pt-5">
+                    <p class="m-0 title-main text-center pb-5">BUY BEFORE THEY GET COLD</p>
+                </div>
+                <div class="col-12">
+                    <div class="swiper" id="gallary2">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <img src="resources/images/8.jpg">
+                                <p class="m-0">3.5 ETH</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/images/9.jpg">
+                                <p class="m-0">2.5 ETH</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/images/10.jpg">
+                                <p class="m-0">4.5 ETH</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/images/11.jpg">
+                                <p class="m-0">3.0 ETH</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/images/26.jpg">
+                                <p class="m-0">5.0 ETH</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/images/27.jpg">
+                                <p class="m-0">2.0 ETH</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/images/28.jpg">
+                                <p class="m-0">2.5 ETH</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/images/29.jpg">
+                                <p class="m-0">1.0 ETH</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/images/30.jpg">
+                                <p class="m-0">1.5 ETH</p>
+                            </div>
+                            <div class="swiper-slide">
+                                <img src="resources/images/24.jpg">
+                                <p class="m-0">6.5 ETH</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="col-12 d-none d-md-none d-lg-block countdown py-5">
+            <div class="row m-0 d-flex justify-content-center align-items-center">
+                <div class="col-9">
+                    <div class="row m-0 d-flex justify-content-between align-items-center">
+                        <div class="col-3 d-grid justify-content-center">
+                            <p class="m-0 count text-center">10000</p>
+                            <p class="m-0 text text-center">NFTs</p>
+                        </div>
+                        <div class="col-3 d-grid justify-content-center">
+                            <p class="m-0 count text-center">7688</p>
+                            <p class="m-0 text text-center">SOLD</p>
+                        </div>
+                        <div class="col-3 d-grid justify-content-center">
+                            <p class="m-0 count text-center">5423</p>
+                            <p class="m-0 text text-center">CUSTOMERS</p>
+                        </div>
+                        <div class="col-3 d-grid justify-content-center">
+                            <p class="m-0 count text-center">1200</p>
+                            <p class="m-0 text text-center">SELLERS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section class="faq">
+            <div class="row">
+                <div class="col-12">
+                    <p class="m-0 title-main text-center pb-5">FAQs</p>
+                </div>
+                <div class="col-12">
+                    <div class="row d-flex justify-content-between align-items-center">
+                        <div class="col-12 col-md-12 col-lg-6">
+                            <div class="col-12">
+                                <div class="accordion" id="accordionExample">
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingOne">
+                                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                                data-bs-target="#collapseOne" aria-expanded="true"
+                                                aria-controls="collapseOne">
+                                                What is an NFT?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseOne" class="accordion-collapse collapse show"
+                                            aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                An NFT, or non-fungible token, is a unique digital asset that represents
+                                                ownership of a specific piece of digital content. Unlike
+                                                cryptocurrencies such as Bitcoin or Ethereum, which are interchangeable
+                                                and have the same value, each NFT is one-of-a-kind and cannot be
+                                                replicated. NFTs have gained popularity in recent years as a way to buy
+                                                and sell digital art, music, and other types of digital content.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingTwo">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                                aria-expanded="false" aria-controls="collapseTwo">
+                                                How do I purchase an NFT?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseTwo" class="accordion-collapse collapse"
+                                            aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                To purchase an NFT, you will need to have a digital wallet that supports
+                                                the type of cryptocurrency accepted by the NFT marketplace. Once you
+                                                have the necessary funds in your wallet, you can browse the marketplace
+                                                for the NFT you want and place a bid or buy it outright. Some
+                                                marketplaces also allow you to use a credit card or other payment method
+                                                to purchase NFTs, but this may not be available on all platforms.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingThree">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                                aria-expanded="false" aria-controls="collapseThree">
+                                                Can I sell my NFT?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseThree" class="accordion-collapse collapse"
+                                            aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                Yes, you can sell your NFT just like any other asset. Most NFT
+                                                marketplaces allow you to list your NFT for sale, and interested buyers
+                                                can place bids or purchase it at the listed price. When you sell an NFT,
+                                                the ownership of the unique digital asset is transferred to the buyer.
+                                                You may also be required to pay a transaction fee to the NFT
+                                                marketplace.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingFOUR">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                                aria-expanded="false" aria-controls="collapseFour">
+                                                What happens if I lose access to my NFT?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFour" class="accordion-collapse collapse"
+                                            aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                If you lose access to your NFT, it may be difficult or impossible to
+                                                recover it. That's why it's important to keep a backup of your digital
+                                                wallet and any login credentials associated with it. If you lose your
+                                                login information, you may be able to use account recovery options
+                                                provided by the NFT marketplace or the digital wallet provider. However,
+                                                it's best to be proactive and store your login information securely in
+                                                the first place.
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion-item">
+                                        <h2 class="accordion-header" id="headingFive">
+                                            <button class="accordion-button collapsed" type="button"
+                                                data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                                aria-expanded="false" aria-controls="collapseFive">
+                                                Is owning an NFT the same as owning the copyright to the content?
+                                            </button>
+                                        </h2>
+                                        <div id="collapseFive" class="accordion-collapse collapse"
+                                            aria-labelledby="headingFive" data-bs-parent="#accordionExample">
+                                            <div class="accordion-body">
+                                                No, owning an NFT does not grant you ownership of the copyright to the
+                                                content. It simply represents your ownership of a unique digital asset.
+                                                The copyright remains with the original creator or owner of the content.
+                                                However, owning an NFT may give you certain rights, such as the right to
+                                                display the digital content in a virtual environment or the right to
+                                                sell the NFT to someone else. It's important to read the terms and
+                                                conditions of the NFT marketplace and any associated licensing
+                                                agreements to understand your rights as an NFT owner.
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 d-none d-md-none d-lg-flex faq-img justify-content-center align-items-center">
+                            <img class="w-75 h-75" src="resources/images/21.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+    <section class="background-3">
+        <div class="news-letter">
+            <div class="row">
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                    <p class="m-0 title-main text-center pb-5 col-10">SUBSCRIBE TO US AND GET AWESOME OFFERS</p>
+                </div>
+                <div class="col-12">
+                    <div class="row d-flex justify-content-center align-items-center">
+                        <div class="col-12 col-md-12 col-lg-8">
+                            <div class="row">
+                                <div
+                                    class="col-12 d-grid d-md-grid d-lg-flex justify-content-lg-between align-items-lg-center">
+                                    <input type="text" class="col-12 col-md-12 col-lg-6 me-0 me-md-0 me-lg-1"
+                                        placeholder="Enter your E-mail...">
+                                    <button
+                                        class="button-white col-12 col-md-12 col-lg-6 ms-0 ms-md-0 ms-lg-1 mt-3 mt-md-3 mt-lg-0">SUBMIT
+                                        AND GET 5% DISCOUNT</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="row">
+                <div class="col-12">
+                    <div class="row">
+                        <div class="col-12 col-md-12 col-lg-3">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="m-0 footer-heading pb-4">NIFTYVERSE</p>
+                                    <p class="m-0 footer-text">Explore a world of endless possibilities and
+                                        creativity with our exclusive collection of
+                                        NFTs - from digital art and music to rare
+                                        collectibles and beyond.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="mt-4 d-block d-md-block d-lg-none">
+                        <div class="col-12 col-md-12 col-lg-3">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="m-0 footer-heading pb-4">QUICK LINKS</p>
+                                    <ul>
+                                        <li><a href="#">Buy Now</a></li>
+                                        <li><a href="#">Offers</a></li>
+                                        <li><a href="#">Cuopons</a></li>
+                                        <li><a href="#">Register</a></li>
+                                        <li><a href="#">Gallary</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="mt-4 d-block d-md-block d-lg-none">
+                        <div class="col-12 col-md-12 col-lg-3">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="m-0 footer-heading pb-4">SUPPORT</p>
+                                    <ul>
+                                        <li><a href="#">Be a Member</a></li>
+                                        <li><a href="#">Purchase</a></li>
+                                        <li><a href="#">Sell</a></li>
+                                        <li><a href="#">Contact Us</a></li>
+                                        <li><a href="#">About Us</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="mt-4 d-block d-md-block d-lg-none">
+                        <div class="col-12 col-md-12 col-lg-3">
+                            <div class="row">
+                                <div class="col-12">
+                                    <p class="m-0 footer-heading pb-4">FOLLOW US</p>
+                                    <ul>
+                                        <li class="d-flex align-items-center"><i class="bi bi-facebook me-3"></i><a
+                                                class="m-0">Facebook</a></li>
+                                        <li class="d-flex align-items-center"><i class="bi bi-twitter me-3"></i><a
+                                                class="m-0">Twitter</a></li>
+                                        <li class="d-flex align-items-center"><i class="bi bi-youtube me-3"></i><a
+                                                class="m-0">YouTube</a></li>
+                                        <li class="d-flex align-items-center"><i class="bi bi-instagram me-3"></i><a
+                                                class="m-0">Instagram</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="mt-4">
+                <div class="col-12 d-flex justify-content-center align-items-center pt-4">
+                    <p class="m-0 text-center">&copy; NIFTYVERSE.COM | ALL RIGHTS RESERVED</p>
+                </div>
+            </div>
+        </footer>
+    </section>
+
+    <script type="text/javascript" src="vanilla-tilt.js"></script>
+    <script src="vanilla-tilt.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script src="script.js"></script>
+    <script src="bootstrap.bundle.js"></script>
+</body>
+
+</html>
